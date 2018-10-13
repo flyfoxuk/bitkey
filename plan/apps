@@ -1,7 +1,7 @@
 mrxvt
 vim-gtk
 chromium
-myspell-en-us
+//myspell-en-us
 thunar
 thunar-volman
 gvfs
@@ -34,3 +34,20 @@ libykpers-1-1			/* dependency for keepassxc */
 
 python-psutil			/* dependency for armory */
 libstdc++6			/* dependency for armory */
+
+/* Python3.6 dependencies */
+/*
+build-essential
+libssl-dev
+zlib1g-dev
+libbz2-dev
+libreadline-dev
+libsqlite3-dev
+wget
+curl
+llvm
+libncurses5-dev
+libncursesw5-dev
+xz-utils
+tk-dev
+*/

@@ -3,11 +3,11 @@ metacity
 dconf-tools
 gnome-tweak-tool
 libglib2.0-bin
-theme-zukitwo
+//theme-zukitwo
 wbar
 consolekit
 policykit-1
 libpam-ck-connector
-usbmount
+//usbmount
 pmount
 autocutsel

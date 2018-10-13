@@ -4,7 +4,8 @@ turnkey-pylib
 turnkey-version
 turnkey-sysinfo
 
-luks
+//luks
+cryptsetup-luks
 gnupg
 gnupg-agent
 pinentry-gtk2

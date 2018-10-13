@@ -25,11 +25,11 @@ sudo ln -s $SHARE/electrum-ltc/electrum-ltc /usr/local/bin/electrum-ltc
 sudo chmod +x /usr/local/bin/electrum-ltc
 
 # unpack electrum-dash
-tar -zxf Electrum-DASH-*.tar.gz
-rm Electrum-DASH-*.tar.gz
-mv Electrum-DASH*/ $SHARE/electrum-dash/
-unzip electrum-dash-packages.zip -d $SHARE/electrum-dash/
-rm electrum-dash-packages.zip
+tar -zxf Dash-Electrum-*.tar.gz
+rm Dash-Electrum-*.tar.gz
+mv Dash-Electrum*/ $SHARE/electrum-dash/
+#unzip electrum-dash-packages.zip -d $SHARE/electrum-dash/
+#rm electrum-dash-packages.zip
 
 # install electrum-dash
 pyrcc4 $SHARE/electrum-dash/icons.qrc -o $SHARE/electrum-dash/gui/qt/icons_rc.py
@@ -72,6 +72,15 @@ sudo chmod +x /usr/local/bin/cryptoseed
 sudo dpkg -i keepassxc*.deb
 rm keepassxc*.deb
 
-# install electrum
+# install Armory
 sudo dpkg -i armory*.deb
 rm armory*.deb
+
+# install Python3.6
+tar xvf Python*.tar.xz
+mv Python*/ python3.6/
+cd python3.6/
+./configure
+make -j8
+make altinstall
+rm -rf python3.6/
