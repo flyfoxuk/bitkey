@@ -6,6 +6,15 @@ SRC=/usr/local/src
 
 cd $SRC
 
+#install Python 3.7
+#tar xvf Python*.tar.xz
+#mv Python*/ python3.7/
+#cd python3.7/
+#./configure
+#make -j4
+#make altinstall
+#rm -rf python3.7/
+
 # unpack Electron Cash
 tar -zxf Electron*.tar.gz
 rm Electron*.tar.gz
@@ -72,6 +81,6 @@ sudo chmod +x /usr/local/bin/cryptoseed
 sudo dpkg -i keepassxc*.deb
 rm keepassxc*.deb
 
-# install electrum
+# install Armory
 sudo dpkg -i armory*.deb
 rm armory*.deb
