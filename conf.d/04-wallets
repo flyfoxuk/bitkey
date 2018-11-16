@@ -12,6 +12,7 @@ cd $SRC
 #cd python3.7/
 #./configure
 #make -j4
+#make test
 #make altinstall
 #rm -rf python3.7/
 
