@@ -12,6 +12,12 @@ chown -R user:user /home/user
 #set user as cups admin
 sudo usermod -aG lpadmin user
 
+# configure nodm
+NODM_CONF="/etc/default/nodm"
+sed -i 's|NODM_USER=.*|NODM_USER=user|' $NODM_CONF
+sed -i 's|NODM_XSESSION=.*|NODM_XSESSION="/home/user/.xsession"|' $NODM_CONF
+chmod +x /home/user/.xsession
+
 # set ownership of automounted usb devices
 CONF=/etc/usbmount/usbmount.conf
 MOUNTOPTIONS="uid=user,gid=user,sync,noexec,nodev,noatime,nodiratime"
