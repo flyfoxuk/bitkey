@@ -3,6 +3,4 @@
 # Make sure that the script will "exit 0" on success or any other
 # value on error.
 
-su user --login -c startx >/var/log/startx.log 2>&1
-
 exit 0
