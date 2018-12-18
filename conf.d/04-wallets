@@ -43,7 +43,7 @@ rm Electrum-*.tar.gz
 
 # install electrum
 mv Electrum-*/ $SHARE/electrum/
-sudo ln -s $SHARE/electrum/electrum /usr/local/bin/electrum
+sudo ln -s $SHARE/electrum/run_electrum /usr/local/bin/electrum
 sudo chmod +x /usr/local/bin/electrum
 
 # install electrum-dash dependencies
