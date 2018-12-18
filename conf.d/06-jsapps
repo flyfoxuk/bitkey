@@ -54,8 +54,12 @@ unzip warp_*.zip
 rm warp_*.zip
 cp warp_*.html $SHARE/warpwallet/warpwallet.html
 
-unzip coinbin*.zip
-rm coinbin*.zip
+#unzip coinbin*.zip
+#rm coinbin*.zip
+#mv coinbin*/ $SHARE/coinbin/
+
+tar -zxf coinbin*.tar.gz
+rm coinbin*.tar.gz
 mv coinbin*/ $SHARE/coinbin/
 
 unzip *MyCrypto.zip
