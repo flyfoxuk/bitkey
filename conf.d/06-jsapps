@@ -58,6 +58,11 @@ unzip coinbin*.zip
 rm coinbin*.zip
 mv coinbin*/ $SHARE/coinbin/
 
+unzip *MyCrypto.zip
+mv Users/macbuildonline/MyCrypto/dist/download/ $SHARE/mycrypto/
+rm -rf Users/
+rm *MyCrypto.zip
+
 unzip etherwallet*.zip
 mv etherwallet*/ $SHARE/myetherwallet/
 rm etherwallet*.zip

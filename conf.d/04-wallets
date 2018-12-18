@@ -75,12 +75,3 @@ rm keepassxc*.deb
 # install Armory
 sudo dpkg -i armory*.deb
 rm armory*.deb
-
-# install Python3.6
-tar xvf Python*.tar.xz
-mv Python*/ python3.6/
-cd python3.6/
-#./configure
-#make -j8
-#make altinstall
-rm -rf python3.6/
