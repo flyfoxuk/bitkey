@@ -6,6 +6,7 @@ thunar
 thunar-volman
 gvfs
 eject
+scrypt
 
 python-setuptools       /* electrum: installation */
 python3-setuptools		/* electrum: installation */

@@ -9,6 +9,7 @@ consolekit
 policykit-1
 libpam-ck-connector
 //usbmount
+udisks2
 pmount
 autocutsel
 nodm
