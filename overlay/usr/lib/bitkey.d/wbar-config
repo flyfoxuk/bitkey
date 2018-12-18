@@ -98,7 +98,7 @@ fi
 cat >>$CONFIG<<EOF
 i: /usr/share/icons/gnome/48x48/actions/system-shutdown.png
 c: shutdown-prompt
-t: shutdown now
+t: shutdown
 
 EOF
 
