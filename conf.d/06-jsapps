@@ -67,9 +67,9 @@ mv Users/macbuildonline/MyCrypto/dist/download/ $SHARE/mycrypto/
 rm -rf Users/
 rm *MyCrypto.zip
 
-unzip etherwallet*.zip
-mv etherwallet*/ $SHARE/myetherwallet/
-rm etherwallet*.zip
+#unzip etherwallet*.zip
+#mv etherwallet*/ $SHARE/myetherwallet/
+#rm etherwallet*.zip
 
 tar -zxf $HELP/assets.tar.gz -C $HELP
 rm $HELP/assets.tar.gz
