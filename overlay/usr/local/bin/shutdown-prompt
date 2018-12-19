@@ -8,5 +8,5 @@ zenity \
     --cancel-label="Cancel" \
     --question --text "$TEXT"
 
-[ "$?" == "0" ] && sudo halt
+[ "$?" == "0" ] && sudo shutdown now
 
