@@ -31,7 +31,7 @@ rm electrum-dash-packages.zip
 # unpack electrum-dash
 tar -zxf Dash-Electrum-*.tar.gz
 rm Dash-Electrum-*.tar.gz
-mv Dash-Electrum*/ $SHARE/electrum-dash/
+mv -f Dash-Electrum*/ $SHARE/electrum-dash/
 
 # install electrum-dash
 #pyrcc4 $SHARE/electrum-dash/icons.qrc -o $SHARE/electrum-dash/gui/qt/icons_rc.py
