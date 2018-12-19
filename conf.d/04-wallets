@@ -24,12 +24,14 @@ mv Electrum-LTC-*/ $SHARE/electrum-ltc/
 sudo ln -s $SHARE/electrum-ltc/electrum-ltc /usr/local/bin/electrum-ltc
 sudo chmod +x /usr/local/bin/electrum-ltc
 
+mkdir $SHARE/electrum-dash/
+unzip electrum-dash-packages.zip -d $SHARE/electrum-dash/
+rm electrum-dash-packages.zip
+
 # unpack electrum-dash
 tar -zxf Dash-Electrum-*.tar.gz
 rm Dash-Electrum-*.tar.gz
 mv Dash-Electrum*/ $SHARE/electrum-dash/
-#unzip electrum-dash-packages.zip -d $SHARE/electrum-dash/
-#rm electrum-dash-packages.zip
 
 # install electrum-dash
 #pyrcc4 $SHARE/electrum-dash/icons.qrc -o $SHARE/electrum-dash/gui/qt/icons_rc.py
