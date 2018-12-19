@@ -11,5 +11,6 @@ libpam-ck-connector
 //usbmount
 udisks2
 pmount
+udev
 autocutsel
 nodm
