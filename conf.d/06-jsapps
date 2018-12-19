@@ -33,7 +33,7 @@ rm minimalist-ripple-client*.zip
 mkdir $SHARE/minripple/
 mv minimalist-ripple-client.html $SHARE/minripple/
 
-mkdir $SHARE/iotapaperwallet
+mkdir $SHARE/iotapaperwallet/
 unzip iota-paper-wallet*.zip -d $SHARE/iotapaperwallet 
 rm iota-paper-wallet*.zip
 
