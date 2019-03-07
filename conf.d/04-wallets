@@ -48,6 +48,7 @@ rm Electrum-*.tar.gz
 mv Electrum-*/ $SHARE/electrum/
 sudo ln -s $SHARE/electrum/run_electrum /usr/local/bin/electrum
 sudo chmod +x /usr/local/bin/electrum
+sudo python3 -m pip install --user Electrum-3.3.4.tar.gz[fast]
 
 # install electrum-dash dependencies
 #mkdir $SHARE/electrum-dash/packages/
