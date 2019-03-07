@@ -21,7 +21,7 @@ rm Electrum-LTC-*.tar.gz
 
 # install electrum-LTC
 mv Electrum-LTC-*/ $SHARE/electrum-ltc/
-sudo ln -s $SHARE/electrum-ltc/electrum-ltc /usr/local/bin/electrum-ltc
+sudo ln -s $SHARE/electrum-ltc/run_electrum /usr/local/bin/electrum-ltc
 sudo chmod +x /usr/local/bin/electrum-ltc
 
 # unpack electrum-dash
