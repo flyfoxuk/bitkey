@@ -6,6 +6,20 @@ SRC=/usr/local/src
 
 cd $SRC
 
+#Install latest Python
+tar -xf Python*.tar.xz
+rm Python*.tar.xz
+mv Python*/ Python3/
+cd Python3/
+./configure
+make
+sudo make install
+
+# TODO include the pyqt5 pack in Bitkey and install locally for higher security 
+pip3 install pyqt5
+
+cd $SRC
+
 # unpack Electron Cash
 tar -zxf Electron*.tar.gz
 rm Electron*.tar.gz
@@ -48,7 +62,7 @@ rm Electrum-*.tar.gz
 mv Electrum-*/ $SHARE/electrum/
 sudo ln -s $SHARE/electrum/run_electrum /usr/local/bin/electrum
 sudo chmod +x /usr/local/bin/electrum
-sudo python3 -m pip install --user Electrum-3.3.4.tar.gz[fast]
+#sudo python3 -m pip install --user Electrum-3.3.4.tar.gz[fast]
 
 # install electrum-dash dependencies
 #mkdir $SHARE/electrum-dash/packages/
@@ -73,8 +87,9 @@ sudo ln -s $LIB/cryptoseed/cryptoseed /usr/local/bin/cryptoseed
 sudo chmod +x /usr/local/bin/cryptoseed
 
 # install keepassxc
-sudo dpkg -i keepassxc*.deb
-rm keepassxc*.deb
+# TODO fix dependencies
+# sudo dpkg -i keepassxc*.deb
+# rm keepassxc*.deb
 
 # install Armory
 sudo dpkg -i armory*.deb

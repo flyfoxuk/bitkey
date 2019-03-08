@@ -1,4 +1,0 @@
-#!/bin/bash -e
-
-cd /usr/local/src/
-sha256sum -c SHA256SUM

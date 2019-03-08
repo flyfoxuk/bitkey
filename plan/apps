@@ -10,13 +10,15 @@ scrypt
 //libsecp256k1
 
 python-setuptools       /* electrum: installation */
-python3-setuptools		/* electrum: installation */´
-python3-pip				/* electrum: installation */´
+//python3-setuptools		/* electrum: installation */´
+//python3-pip				/* electrum: installation */´
 python-sip              /* electrum: virtual package providing sip-api-8.1 */
+//python3-sip
 python-qt4              /* electrum: qt gui interface */
-python3-pyqt5			/* electrum: qt gui interface */
+//python3-pyqt5			/* electrum: qt gui interface */
 pyqt4-dev-tools			/* electrum: compile icons */
-pyqt5-dev-tools			/* electrum: compile icons */
+//pyqt5-dev-tools			/* electrum: compile icons */
+
 patch                   /* electrum: apply patches */
 libusb-1.0-0-dev		/* electrum-dash */
 
@@ -32,14 +34,15 @@ florence                /* onscreen keyboard */
 at-spi2-core            /* required for florence */
 
 keepassx				/* as per feature request #52 */
+//libqt5widgets5		/* dependency for keepassxc */
 libqt5x11extras5		/* dependency for keepassxc */
 libykpers-1-1			/* dependency for keepassxc */
 
 python-psutil			/* dependency for armory */
 libstdc++6			/* dependency for armory */
 
-/* Python3.6 dependencies */
-/*
+/* Python3.7 dependencies */
+xz-utils
 build-essential
 libssl-dev
 zlib1g-dev
@@ -53,4 +56,7 @@ libncurses5-dev
 libncursesw5-dev
 xz-utils
 tk-dev
-*/
+libgdbm-dev
+libnss3-dev
+libffi-dev
+libqt4-dev
