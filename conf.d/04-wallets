@@ -7,45 +7,45 @@ SRC=/usr/local/src
 cd $SRC
 
 #Install latest Python
-tar -xf Python*.tar.xz
-rm Python*.tar.xz
-mv Python*/ Python3/
-cd Python3/
-./configure
-make
-sudo make install
+#tar -xf Python*.tar.xz
+#rm Python*.tar.xz
+#mv Python*/ Python3/
+#cd Python3/
+#./configure
+#make
+#sudo make install
 
 # TODO include the pyqt5 pack in Bitkey and install locally for higher security 
-pip3 install pyqt5
+#pip3 install pyqt5
 
-cd $SRC
+#cd $SRC
 
 # unpack Electron Cash
-tar -zxf Electron*.tar.gz
-rm Electron*.tar.gz
+#tar -zxf Electron*.tar.gz
+#rm Electron*.tar.gz
 
 # install Electron Cash
-mv Electron*/ $SHARE/electron-cash/
-sudo ln -s $SHARE/electron-cash/electron-cash /usr/local/bin/electron-cash
-sudo chmod +x /usr/local/bin/electron-cash
+#mv Electron*/ $SHARE/electron-cash/
+#sudo ln -s $SHARE/electron-cash/electron-cash /usr/local/bin/electron-cash
+#sudo chmod +x /usr/local/bin/electron-cash
 
 # unpack electrum-LTC
-tar -zxf Electrum-LTC-*.tar.gz
-rm Electrum-LTC-*.tar.gz
+#tar -zxf Electrum-LTC-*.tar.gz
+#rm Electrum-LTC-*.tar.gz
 
 # install electrum-LTC
-mv Electrum-LTC-*/ $SHARE/electrum-ltc/
-sudo ln -s $SHARE/electrum-ltc/run_electrum /usr/local/bin/electrum-ltc
-sudo chmod +x /usr/local/bin/electrum-ltc
+#mv Electrum-LTC-*/ $SHARE/electrum-ltc/
+#sudo ln -s $SHARE/electrum-ltc/run_electrum /usr/local/bin/electrum-ltc
+#sudo chmod +x /usr/local/bin/electrum-ltc
 
 # unpack electrum-dash
-tar -zxf Dash-Electrum-*.tar.gz
-rm Dash-Electrum-*.tar.gz
-mv Dash-Electrum*/ $SHARE/electrum-dash/
+#tar -zxf Dash-Electrum-*.tar.gz
+#rm Dash-Electrum-*.tar.gz
+#mv Dash-Electrum*/ $SHARE/electrum-dash/
 
 # unpack electrum-dash dependencies
-unzip electrum-dash-packages.zip -d electrum-dash/
-rm electrum-dash-packages.zip
+#unzip electrum-dash-packages.zip -d electrum-dash/
+#rm electrum-dash-packages.zip
 #mv -u electrum-dash/ $SHARE/electrum-dash/
 
 # install electrum-dash
@@ -55,27 +55,27 @@ rm electrum-dash-packages.zip
 #sudo chmod +x /usr/local/bin/electrum-dash
 
 # unpack electrum
-tar -zxf Electrum-*.tar.gz
-rm Electrum-*.tar.gz
+#tar -zxf Electrum-*.tar.gz
+#rm Electrum-*.tar.gz
 
 # install electrum
-mv Electrum-*/ $SHARE/electrum/
-sudo ln -s $SHARE/electrum/run_electrum /usr/local/bin/electrum
-sudo chmod +x /usr/local/bin/electrum
+#mv Electrum-*/ $SHARE/electrum/
+#sudo ln -s $SHARE/electrum/run_electrum /usr/local/bin/electrum
+#sudo chmod +x /usr/local/bin/electrum
 #sudo python3 -m pip install --user Electrum-3.3.4.tar.gz[fast]
 
 # install electrum-dash dependencies
 #mkdir $SHARE/electrum-dash/packages/
-/bin/cp $SHARE/electrum/packages/* $SHARE/electrum-dash/packages/ -R  
+#/bin/cp $SHARE/electrum/packages/* $SHARE/electrum-dash/packages/ -R  
 
 # unpack Exodus
-unzip exodus-*.zip -d .
-rm exodus-*.zip
+#unzip exodus-*.zip -d .
+#rm exodus-*.zip
 
 # install Exodus
-mv Exodus*/ $LIB/exodus/
-sudo ln -s $LIB/exodus/Exodus /usr/local/bin/exodus
-sudo chmod +x /usr/local/bin/exodus
+#mv Exodus*/ $LIB/exodus/
+#sudo ln -s $LIB/exodus/Exodus /usr/local/bin/exodus
+#sudo chmod +x /usr/local/bin/exodus
 
 # unpack CryptoSeed
 unzip CryptoSeed*.zip
@@ -92,5 +92,5 @@ sudo chmod +x /usr/local/bin/cryptoseed
 # rm keepassxc*.deb
 
 # install Armory
-sudo dpkg -i armory*.deb
-rm armory*.deb
+#sudo dpkg -i armory*.deb
+#rm armory*.deb

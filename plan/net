@@ -2,7 +2,8 @@ wget
 curl
 ethtool
 netbase
-iproute
+//iproute
+iproute2
 ntpdate
 ifupdown
 net-tools
