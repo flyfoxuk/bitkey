@@ -1,3 +1,14 @@
+Debian Buster (TKLDev v16) based BitKey port - test!
+====================================================
+
+Buster specific comments:
+	nil
+	
+
+
+Old readme follows:
+
+
 BitKey is a swiss army knife of handy Bitcoin tools built on top of
 Debian, which we created to scratch our own itch.
 
