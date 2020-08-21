@@ -1,11 +1,11 @@
 inithooks
-python-dialog
-turnkey-pylib
+//python-dialog
+//turnkey-pylib
 turnkey-version
 turnkey-sysinfo
 
 //luks
-cryptsetup-luks
+//cryptsetup-luks
 gnupg
 gnupg-agent
 pinentry-gtk2
