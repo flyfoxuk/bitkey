@@ -1,7 +1,10 @@
 //mrxvt
+rxvt-unicode
 vim-gtk
 chromium
+chromium-sandbox
 //myspell-en-us
+hunspell-en-us
 thunar
 thunar-volman
 gvfs
@@ -22,16 +25,16 @@ scrypt
 //patch                   /* electrum: apply patches */
 //libusb-1.0-0-dev		/* electrum-dash */
 
-//cheese					/* required for webcam */
-//qtqr					/* QR code scanner for webcam */
-//zbar-tools				/* QR utilities */
+cheese					/* required for webcam */
+qtqr					/* QR code scanner for webcam */
+zbar-tools				/* QR utilities */
 
 //p7zip-full              /* as per feature request #11 */
 
 //secure-delete
 
-//florence                /* onscreen keyboard */
-//at-spi2-core            /* required for florence */
+florence                /* onscreen keyboard */
+at-spi2-core            /* required for florence */
 
 //keepassx				/* as per feature request #52 */
 //libqt5widgets5		/* dependency for keepassxc */
@@ -42,21 +45,21 @@ scrypt
 libstdc++6			/* dependency for armory */
 
 /* Python3.7 dependencies */
-//xz-utils
+xz-utils
 build-essential
-//libssl-dev
-//zlib1g-dev
-//libbz2-dev
-//libreadline-dev
-//libsqlite3-dev
-//wget
-//curl
-//llvm
-//libncurses5-dev
-//libncursesw5-dev
-//xz-utils
-//tk-dev
-//libgdbm-dev
-//libnss3-dev
-//libffi-dev
-//libqt4-dev
+libssl-dev
+zlib1g-dev
+libbz2-dev
+libreadline-dev
+libsqlite3-dev
+wget
+curl
+llvm
+libncurses5-dev
+libncursesw5-dev
+xz-utils
+tk-dev
+libgdbm-dev
+libnss3-dev
+libffi-dev
+libqt4-dev

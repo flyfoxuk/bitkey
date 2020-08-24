@@ -13,6 +13,8 @@ fi
 if which wbar >/dev/null; then
     sleep 2
     exec wbar
+    sleep 2
+    exec xterm
 else
     exec xterm
 fi
