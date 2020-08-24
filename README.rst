@@ -2,7 +2,11 @@ Debian Buster (TKLDev v16) based BitKey port - test!
 ====================================================
 
 Buster specific comments:
-	nil
+
+- Edit common/mk/turnkey-desktop.mk to change apt.d to /bootstrap_apt and comment out other utils
+- Also comment out "which insserv" line towards the end
+- Change overlay/user/share/initramfs-tools/scripts/casper-bottom to init-bottom
+
 	
 
 
