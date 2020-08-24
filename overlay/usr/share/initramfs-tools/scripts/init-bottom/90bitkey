@@ -22,7 +22,7 @@ prereqs)
     ;;
 esac
 
-. /scripts/casper-functions
+#. /scripts/casper-functions
 
 if [ -e /root/usr/lib/bitkey.d ]; then
     log_begin_msg "$DESCRIPTION"
