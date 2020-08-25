@@ -1,5 +1,7 @@
 #!/bin/bash -e
 
+sudo bash -c "echo bitkey > /etc/hostname"
+
 SRC=/usr/local/src
 
 cd $SRC

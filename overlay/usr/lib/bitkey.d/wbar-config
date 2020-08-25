@@ -40,6 +40,14 @@ i: /usr/share/pixmaps/mrxvt.png
 c: xterm
 t: terminal
 
+i: /usr/share/icons/Adwaita/48x48/devices/input-keyboard.png
+c: florence
+t: keyboard
+
+i: /usr/share/icons/Adwaita/48x48/apps/system-file-manager.png
+c: thunar /media
+t: file manager
+
 i: /usr/share/icons/Adwaita/48x48/actions/system-shutdown.png
 c: shutdown-prompt
 t: shutdown
