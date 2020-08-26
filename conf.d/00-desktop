@@ -1,5 +1,8 @@
 #!/bin/bash -e
 
+echo 'bitkey' | sudo tee /etc/hostname
+
+
 # update gsettings with customizations
 glib-compile-schemas /usr/share/glib-2.0/schemas
 

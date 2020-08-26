@@ -1,0 +1,17 @@
+#!/bin/bash -e
+
+SRC=/usr/local/src
+SHARE=/usr/local/share
+
+cd $SRC
+tar -xf encryptpad*_src.tar.gz
+rm encryptpad*_src.tar.gz
+
+cd encryptpad*_src
+#sudo ./configure.py --build-botan --build-zlib
+sudo ./configure.py
+sudo make
+
+mv bin/release/ $SHARE/encryptpad/
+
+

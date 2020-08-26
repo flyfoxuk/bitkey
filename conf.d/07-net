@@ -1,6 +1,7 @@
 #!/bin/bash -e
 
-sudo bash -c "echo bitkey > /etc/hostname"
+#sudo bash -c "echo bitkey > /etc/hostname"
+#echo 'bitkey' | sudo tee /etc/hostname
 
 SRC=/usr/local/src
 

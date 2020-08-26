@@ -64,3 +64,12 @@ libgdbm-dev
 libnss3-dev
 libffi-dev
 libqt4-dev
+
+
+qtbase5-dev
+qt5-default
+gcc
+g++
+zlib1g-dev
+pkg-config
+libbotan-2-dev
