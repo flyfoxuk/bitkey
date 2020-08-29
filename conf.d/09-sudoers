@@ -1,0 +1,16 @@
+#!/bin/bash -e
+
+# remove sudo group from /etc/sudoers file IF we are in cold-offline mode
+
+
+$mode=$1
+
+if [ "$mode" = "cold-offline" ]; then
+	sed -i 's/^%sudo ALL.*$//' /etc/sudoers
+fi
+
+echo "***************************"
+echo "***************************"
+echo "***************************"
+
+

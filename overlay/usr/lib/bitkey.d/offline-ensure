@@ -1,0 +1,19 @@
+#!/bin/sh
+
+mode=$1
+
+if [ "$mode" = "cold-offline" ]; then
+
+# ensure sudo group is removed from sudoers list so no root stuff can take place
+# (note: temporary commented out to work on IP tables below so that after boot I can check if actioned or not)
+#sed -i 's/^%sudo ALL.*$//' /etc/sudoers
+
+# add iptables restrictions by force
+# (this is in addition to the fact that there are no entries in /etc/network/interfaces anyway for cold-offline)
+iptables-legacy -F
+iptables-legacy -A INPUT -j REJECT
+iptables-legacy -A OUTPUT -j REJECT
+iptables-legacy -A FORWARD -j REJECT
+
+fi
+
